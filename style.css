@@ -1,0 +1,247 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+section p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Expertise & Experience Styles */
+#expertise ul, #experience ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#expertise li, #experience li {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#expertise li:hover, #experience li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Projects Section */
+.project-item {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 800px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f39c12;
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    .container h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    .project-item h3 {
+        font-size: 24px;
+    }
+
+    form input, form textarea, form input[type="submit"] {
+        max-width: 100%;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+    header {
+        text-align: left;
+        padding: 20px 40px;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image-container img {
+        margin-bottom: 0;
+    }
+
+    .container h1, .container p {
+        text-align: left;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    #expertise ul, #experience ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #expertise li, #experience li {
+        width: 30%;
+    }
+
+    form input, form textarea, form input[type="submit"] {
+        max-width: 50%;
+    }
+}
